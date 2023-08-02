@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
 
-
 public class MainActivity3 extends AppCompatActivity {
     @SuppressLint("SetTextI18n")
     @Override
@@ -44,26 +43,26 @@ public class MainActivity3 extends AppCompatActivity {
         txtCargo.setText("Cargo: \n "+ cargo);
         txtSueldo.setText("Sueldo: \n $ " + sueldo);
         txtDiasLab.setText("Dias laborados: " + diasLab);
-        double valorDia = sueldo / diasLab;
+        double valorDia = sueldo / 30;
         txtValorDia.setText("Valor x Día : \n $" + valorDia);
+
+        double salarioNeto = sueldo;
+
         if (descuento) {
-            txtDescuento.setText("Descuento: Sí");
-            sueldo = sueldo - (sueldo * 3 / 100);
-        }else{
-            txtDescuento.setText("Descuento: No");
+            double desc = (sueldo * 3 / 100);
+            salarioNeto = salarioNeto - desc
+            txtDescuento.setText("Descuento 3%: "+desc);
         }
         if (salud) {
-            txtSalud.setText("Salud: Sí");
-            sueldo = sueldo - (sueldo * 4 / 100);
-        }else{
-            txtSalud.setText("Salud: No");
+            double sal = (sueldo * 4 / 100);
+            salarioNeto = salarioNeto - sal
+            txtSalud.setText("Salud 4%: "+sal);
         }
         if (pension) {
-            txtPension.setText("Pensión: Sí");
-            sueldo = sueldo - (sueldo * 4 / 100);
-        }else{
-            txtPension.setText("Pensión: No");
+            double pen = (sueldo * 4 / 100);
+            salarioNeto = salarioNeto - pen
+            txtPension.setText("Pensión 4%: "+pen);
         }
-        txtTotal.setText("Sueldo Neto: " + sueldo);
+        txtTotal.setText("Sueldo Neto: " + salarioNeto);
     }
 }

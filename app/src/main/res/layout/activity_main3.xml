@@ -64,21 +64,21 @@
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/descuento"
-        android:text=""
+        android:text="@string/viewDescu"
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/salud"
-        android:text=""
+        android:text="@string/viewSalud"
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:layout_height="wrap_content" />
     <TextView
         android:id="@+id/pension"
-        android:text=""
+        android:text="@string/viewPension   "
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"
         android:gravity="center"

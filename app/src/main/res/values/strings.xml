@@ -16,4 +16,7 @@
     <string name="descuento">Descuento</string>
     <string name="salud">Salud</string>
     <string name="pension">Pensión</string>
+    <string name="viewDescu">Descuento: No</string>
+    <string name="viewSalud">Salud: No</string>
+    <string name="viewPension">Pensión: No</string>
 </resources>
